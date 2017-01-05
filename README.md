@@ -20,10 +20,24 @@ npm start
 
 *Note: runtime.js is work in progress*
 
-### install qemu
+### dependencies
+
+see: https://github.com/runtimejs/runtime
 
 ```
-// Mac
-brew install qemu
+# install dependencies
+npm install runtimejs
+npm install runtimeify -g
+npm install runtime-tools -g
+
+# bundle up ramdisk image
+runtimeify index.js -o initrd
+
+# make sure you have QEMU installed
+brew install qemu           # OSX
+sudo apt-get install qemu   # Ubuntu
+
+# run it in QEMU
+runtime-qemu ./initrd
 ```
 
