@@ -19,3 +19,11 @@ npm start
 ```
 
 *Note: runtime.js is work in progress*
+
+### install qemu
+
+```
+// Mac
+brew install qemu
+```
+
